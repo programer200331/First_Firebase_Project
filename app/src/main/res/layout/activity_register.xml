@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.RegisterActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+    <TextView
+        android:id="@+id/text_activity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_new_account"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/vertical_guid1"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_guid1" />
+
+    <TextView
+        android:id="@+id/text_activity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_new_account_details"
+        android:textColor="#474747"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/vertical_guid1"
+        app:layout_constraintTop_toBottomOf="@id/text_activity1" />
+
+    <EditText
+        android:id="@+id/et_r_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_guid2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_guid1"
+        app:layout_constraintTop_toBottomOf="@id/text_activity2" />
+
+    <EditText
+        android:id="@+id/et_r_user_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="@string/register_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_guid2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_guid1"
+        app:layout_constraintTop_toBottomOf="@id/et_r_user_name" />
+
+
+    <EditText
+        android:id="@+id/et_r_user_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/register_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_guid2"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="@+id/vertical_guid1"
+        app:layout_constraintTop_toBottomOf="@id/et_r_user_email" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/vertical_guid1"
+        app:layout_constraintEnd_toStartOf="@id/vertical_guid2"
+        app:layout_constraintTop_toBottomOf="@id/et_r_user_password"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/male"/>
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/but_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#673AB7"
+        android:text="@string/register_now"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_guid2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_guid1"
+        app:layout_constraintTop_toBottomOf="@id/radio_group_gender" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Firebase Application</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="logout">تسجيل الخروج</string>
+    <string name="add_task">أضافة مهمة</string>
+    <string name="update_task">تحديث بيانات المهمة</string>
+    <string name="welcome_back">مرحبًا بعودتك…</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">دخول</string>
+    <string name="don_t_have_account">لا تملك حساب</string>
+    <string name="create_now">أنشئ الأن!</string>
+    <string name="create_new_account">انشاء حساب جديد</string>
+    <string name="enter_new_account_details">أدخل تفاصيل الحساب الجديد</string>
+    <string name="name">إسم المستخدم</string>
+    <string name="register_email">البريد الإلكتروني</string>
+    <string name="register_password">كلمة المرور</string>
+    <!--    <string name="male">ذكر</string>-->
+    <!--    <string name="female">أنثى</string>-->
+    <string name="register_now">تسجيل الحساب</string>
+    <string name="new_title">العنوان الجديد</string>
+    <string name="update">تحديث البيانات</string>
+    <string name="task_title">عنوان المهمة</string>
+    <string name="add">أضافة</string>
+    <string name="toast_enter_data">يرجى إدخال البيانات المطلوبة</string>
+    <string name="toast_enter_email">البريد الإلكتروني</string>
+    <string name="toast_enter_password">كلمة المرور</string>
+    <string name="toast_new_title">أدخل عنوان جديد</string>
+    <string name="toast_enter_title">أدخل عنوان المهمة</string>
+    <string name="tasks">المهام</string>
+    <string name="toast_no_internet">لا يوجد إتصال بالإنترنت</string>
+    <string name="images">الصور</string>
+    <string name="firebase_application">Firebase Application</string>
+    <string name="forgot_password">نسيت كلمة المرور</string>
+    <string name="enter_email_to_send_reset_email">أدخل إيميل لإرسال رسالة إعادة تعيين</string>
+    <string name="send">إرسال</string>
+    <string name="toast_enter_email_to_continue">أدخل عنوان بريد للإستمرار</string>
+</resources>
